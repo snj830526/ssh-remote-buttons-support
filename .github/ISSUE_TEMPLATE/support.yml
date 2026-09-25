@@ -1,0 +1,18 @@
+name: Support / 지원
+description: Report a problem without sharing secrets / 비밀정보 없이 문의하기
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Never include passwords, keys, hosts, IPs, usernames, commands, output or private screenshots. 공개 문의입니다. 비밀번호, 키, 서버 주소, 사용자 이름, 명령, 출력 또는 민감한 스크린샷을 올리지 마세요."
+  - type: input
+    id: versions
+    attributes:
+      label: App and iOS versions / 앱 및 iOS 버전
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problem and safe reproduction steps / 문제와 비민감 재현 단계
+    validations:
+      required: true
